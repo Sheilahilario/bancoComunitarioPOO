@@ -36,7 +36,7 @@ export class ContaService {
       return false;
     }
 
-    if (!contaOrigem.sacar(valor)) {
+    if (contaOrigem.sacar(valor)) {
       console.log(`Falha ao sacar ${valor} da conta de origem ${numeroContaOrigem}. Saldo insuficiente.`);
       return false;
     }

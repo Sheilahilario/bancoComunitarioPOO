@@ -9,19 +9,19 @@ const contaService = new ContaService();
 const cliente1 = new Cliente(1, "João Lucas Oliveira", "Rua New York, 106", "123456789", 600);
 clienteService.adicionarCliente(cliente1);
 
-const cliente2 = new Cliente(2, "Sheila de Oliveira", "Av. Brasil, 200", "987654321", 500);
+const cliente2 = new Cliente(2, "Sheila de Oliveira", "Av. Brasil, 200", "987654321", 900);
 clienteService.adicionarCliente(cliente2);
 
 // Valida e cria contas correntes para os clientes
 if (cliente1.salario >= 500) {
-  const contaCorrente1 = contaService.criarContaCorrente(101, 100);
+  const contaCorrente1 = contaService.criarContaCorrente(101, 900);
   console.log(`Conta corrente criada com sucesso para ${cliente1.nomeCompleto} com saldo de ${contaCorrente1.saldo}`);
 } else {
   console.log("Salário insuficiente para criar uma conta corrente para João Lucas Oliveira.");
 }
 
 if (cliente2.salario >= 500) {
-  const contaCorrente2 = contaService.criarContaCorrente(102, 1000);
+  const contaCorrente2 = contaService.criarContaCorrente(102, 400);
   console.log(`Conta corrente criada com sucesso para ${cliente2.nomeCompleto} com saldo de ${contaCorrente2.saldo}`);
 } else {
   console.log("Salário insuficiente para criar uma conta corrente para Sheila de Oliveira.");
@@ -43,7 +43,7 @@ if (conta1) {
 // Exemplo de transferência
 const conta2 = contaService.obterContaPorNumero(102);
 if (conta1 && conta2) {
-  const sucesso = contaService.transferir(101, 102, 150);
+  const sucesso = contaService.transferir(101, 102, 50);
   if (sucesso) {
     console.log(`Transferência realizada com sucesso! Novo saldo da conta 101: ${conta1.saldo}, novo saldo da conta 102: ${conta2.saldo}`);
   } else {
