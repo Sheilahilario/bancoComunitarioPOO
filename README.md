@@ -18,6 +18,8 @@
  - Para a conta corrente, é necessário armazenar o limite do cheque especial(R$ 100,00).
 
 
- - Exemplo .log() 
+ - Exemplo .log()
+
+
 <img width="915" alt="image" src="https://github.com/Sheilahilario/bancoComunitarioPOO/assets/68394577/068e3792-0a88-4fdb-96c6-007abaec2c03">
 
