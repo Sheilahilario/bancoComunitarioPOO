@@ -1,5 +1,4 @@
 import { ClienteInterface } from "../interfaces/ClienteInterface";
-
 export class Cliente implements ClienteInterface {
   constructor(
     public id: number,

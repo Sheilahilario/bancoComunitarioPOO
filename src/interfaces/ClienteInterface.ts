@@ -4,4 +4,5 @@ export interface ClienteInterface {
   endereco: string;
   telefone: string;
   salario: number;
+
 }
