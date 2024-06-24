@@ -1,4 +1,3 @@
-// services/ContaService.ts
 import { ContaBancaria } from "../models/ContaBancaria";
 import { ContaCorrente } from "../models/ContaCorrente";
 import { ContaPoupanca } from "../models/ContaPoupanca";

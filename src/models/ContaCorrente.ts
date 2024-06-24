@@ -1,4 +1,3 @@
-// src/models/ContaCorrente.ts
 import { ContaBancaria } from "./ContaBancaria";
 
 export class ContaCorrente extends ContaBancaria {
