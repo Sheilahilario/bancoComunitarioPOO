@@ -10,7 +10,7 @@ export abstract class ContaBancaria implements ContaBancariaInterface {
     this.saldo += valor;
   }
 
-  sacar(valor: number): void {
+  sacar(valor: number): any {
     if (valor <= this.saldo) {
       this.saldo -= valor;
     } else {
